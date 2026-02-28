@@ -2,7 +2,7 @@
 
 Luxury, million-dollar presentation with engineering-first delivery.
 
-## Project rules (baseline)
+## Baseline rules
 - Return only full files.
 - Do not touch sections outside current focus.
 - Stack section is off-limits.
@@ -16,6 +16,9 @@ Hero only:
 
 ## Hosting target
 Loopia shared hosting (static build; no Node server).
+
+## Local dev (XAMPP)
+Open: http://localhost/cc/
 
 ## Structure
 - index.html
