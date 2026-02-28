@@ -5,8 +5,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>CORE Creative — Real Overlay Stack</title>
-  <meta name="description" content="CORE Creative designs and engineers high-performance digital systems — premium interfaces, scalable architecture, production discipline." />
+  <title>CORE Creative — Engineering-led Digital Systems</title>
+  <meta
+    name="description"
+    content="Premium digital platforms engineered against measurable baselines: performance budgets, Core Web Vitals, accessibility, and security — verified before release."
+  />
 
   <meta name="robots" content="index,follow" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
@@ -16,63 +19,80 @@
   <meta name="color-scheme" content="dark light" />
 
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="CORE Creative — Digital systems. Engineered with intent." />
-  <meta property="og:description" content="Premium digital systems: strategy, design, engineering — built with performance and production discipline." />
+  <meta property="og:title" content="CORE Creative — Engineering-led Digital Systems" />
+  <meta
+    property="og:description"
+    content="Engineering-first delivery: defined budgets, measurable baselines, and release gates for CWV, accessibility, and security."
+  />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="CORE Creative — Digital systems. Engineered with intent." />
-  <meta name="twitter:description" content="Premium digital systems: strategy, design, engineering — built with performance and production discipline." />
+  <meta name="twitter:title" content="CORE Creative — Engineering-led Digital Systems" />
+  <meta
+    name="twitter:description"
+    content="Engineering-first delivery: defined budgets, measurable baselines, and release gates for CWV, accessibility, and security."
+  />
 
-  <link rel="stylesheet" href="assets/css/styles.css?v=dev5" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=dev7" />
 </head>
 <body>
-  <header class="nav">
+
+  <!-- NAV -->
+  <div class="nav">
     <div class="container nav-inner">
-      <a class="brand" href="#top"><span class="dot"></span><span>CORECREATIVE</span></a>
-      <nav class="links">
-        <a class="active" href="#services">Services</a>
-        <a href="#stack">Flow</a>
+      <a class="brand" href="#top" aria-label="CORECREATIVE">
+        <span class="dot"></span>
+        <span>CORECREATIVE</span>
+      </a>
+
+      <div class="links" aria-label="primary">
+        <a href="#services">Services</a>
+        <a href="#stack" class="active">Flow</a>
         <a href="#contact">Contact</a>
-      </nav>
+      </div>
+
       <a class="cta" href="#contact">Start a Project</a>
     </div>
-  </header>
+  </div>
 
-  <main>
-    <section class="hero" id="top">
-      <div class="hero-spot"></div>
-      <div class="container hero-grid">
-        <div class="panel reactive hero-main">
-          <div class="hero-line"></div>
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-spot"></div>
 
-          <div>
-            <span class="eyebrow">High-end studio / Strategy + Design + Engineering</span>
+    <div class="container hero-grid">
 
-            <h1 class="title" aria-label="Digital systems. Engineered with intent.">
-              <span class="line l1">
-                <span class="w">Digital</span>
-                <span class="w">systems<span class="punct punct-accent">.</span></span>
-              </span>
-              <span class="line l2">
-                <span class="w">Engineered</span>
-                <span class="w">with</span>
-                <span class="w accent">intent<span class="punct punct-invert">.</span></span>
-              </span>
-            </h1>
+      <!-- LEFT -->
+      <div class="panel reactive hero-main">
+        <div class="hero-line"></div>
 
-            <p class="hero-copy">
-              We architect and ship custom digital platforms — premium interface systems, disciplined engineering, and long-term maintainability.
-            </p>
+        <div>
+          <span class="eyebrow">Engineering-led studio / Architecture · Design · Delivery</span>
 
-            <div class="actions">
-              <a class="btn primary" href="#contact">Send Inquiry</a>
-              <a class="btn secondary" href="#stack">See the Stack</a>
-            </div>
+          <h1 class="title" aria-label="Digital systems. Engineered with intent.">
+            <span class="line l1">
+              <span class="w">Digital</span>
+              <span class="w">systems<span class="punct punct-accent">.</span></span>
+            </span>
+            <span class="line l2">
+              <span class="w">Engineered</span>
+              <span class="w">with</span>
+              <span class="w accent">intent<span class="punct punct-white">.</span></span>
+            </span>
+          </h1>
+
+          <p class="hero-copy">
+            We engineer custom platforms against defined budgets — performance, Core Web Vitals,
+            accessibility, and security — measured, reviewed, and maintained post-launch.
+          </p>
+
+          <div class="actions">
+            <a class="btn primary" href="#contact">Send Inquiry</a>
+            <a class="btn secondary" href="#stack">See the Stack</a>
           </div>
+        </div>
 
+        <div class="hero-lower">
           <div class="hero-strip">
-
-            <!-- ENGINEERING PROFILE (LIST — PREMIUM) -->
+            <!-- ENGINEERING PROFILE -->
             <div class="card reactive profile-card">
               <div>
                 <div class="label">Engineering profile</div>
@@ -80,7 +100,7 @@
                 <div class="profile-list" aria-label="engineering profile list">
                   <div class="pl">
                     <strong>Latency</strong>
-                    <span>Fast render & interaction response</span>
+                    <span>Fast render &amp; interaction response</span>
                   </div>
                   <div class="pl">
                     <strong>Bespoke</strong>
@@ -90,6 +110,10 @@
                     <strong>Scale</strong>
                     <span>Architecture designed to evolve</span>
                   </div>
+                  <div class="pl">
+                    <strong>Control</strong>
+                    <span>Structured delivery, predictable outcomes</span>
+                  </div>
                 </div>
               </div>
 
@@ -98,7 +122,7 @@
               </p>
             </div>
 
-            <!-- ENGINEERING BASELINE (NO DELIVERY DUPLICATE) -->
+            <!-- ENGINEERING BASELINE -->
             <div class="card reactive baseline-card">
               <div>
                 <div class="label">Engineering baseline</div>
@@ -127,116 +151,145 @@
                 Baseline gates apply to every release — no exceptions.
               </p>
             </div>
+          </div>
 
+          <!-- RELEASE PROFILE -->
+          <div class="proof-block reactive" aria-label="release profile">
+            <div class="label">Release profile</div>
+
+            <div class="proof-lines">
+              <div class="proof-line">
+                <strong>Delivery</strong>
+                <span>2–6 weeks</span>
+              </div>
+              <div class="proof-line">
+                <strong>Quality</strong>
+                <span>Performance budget · CWV gates · A11y baseline · Security-first</span>
+              </div>
+              <div class="proof-line">
+                <strong>Support</strong>
+                <span>12 months</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <aside class="panel reactive hero-side">
+        <div class="side-box reactive">
+          <div class="label">Capability</div>
+
+          <h4>Design. Engineering. Deployment.</h4>
+          <p class="studio-copy">
+            Strategic architecture, premium interfaces and scalable systems — delivered with production discipline.
+          </p>
+
+          <div class="mini-stack">
+            <div class="label">Tech stack</div>
+
+            <div class="stack-group stack-group-first">
+              <div class="label">Frontend</div>
+              <div class="pill-row">
+                <span class="pill">React</span>
+                <span class="pill">TypeScript</span>
+                <span class="pill">Next.js</span>
+                <span class="pill">Tailwind</span>
+              </div>
+            </div>
+
+            <div class="stack-group mini-stack-tight">
+              <div class="label">Backend</div>
+              <div class="pill-row">
+                <span class="pill">Node.js</span>
+                <span class="pill">PHP 8.3</span>
+                <span class="pill">Laravel</span>
+              </div>
+            </div>
+
+            <div class="stack-group mini-stack-tight">
+              <div class="label">Data &amp; Infra</div>
+              <div class="pill-row">
+                <span class="pill">PostgreSQL</span>
+                <span class="pill">MySQL</span>
+                <span class="pill">Redis</span>
+                <span class="pill">Docker</span>
+                <span class="pill">AWS</span>
+                <span class="pill">CI/CD</span>
+              </div>
+            </div>
+
+            <div class="stack-note-block">
+<div class="stack-note-rows">
+  <div class="stack-note-item">
+    <div class="stack-note-label">Mobile capability</div>
+    <div class="stack-note-copy">Native iOS/Android · React Native</div>
+  </div>
+
+  <div class="stack-note-item">
+    <div class="stack-note-label">Stack selection</div>
+    <div class="stack-note-copy">
+      Chosen against performance, maintainability and delivery constraints.
+    </div>
+  </div>
+
+  <div class="stack-note-item">
+    <div class="stack-note-label">Deployment fit</div>
+    <div class="stack-note-copy">
+      Built for shared hosting, controlled environments, and clean handoff.
+    </div>
+  </div>
+  <div class="stack-note-item">
+  <div class="stack-note-label">Maintenance logic</div>
+  <div class="stack-note-copy">
+    Designed for clean revisions, stable updates, and low-friction handoff.
+  </div>
+</div>
+</div>
+            </div>
           </div>
         </div>
 
-        <aside class="panel reactive hero-side">
-          <div class="side-box reactive">
+        <div class="side-box reactive">
+          <div class="label">Studio signal</div>
+          <h3 class="studio-title">Controlled. Precise. Distinct.</h3>
+          <p class="studio-copy">
+            Motion is engineered, not decorative. Every detail supports clarity, perceived value and performance.
+          </p>
 
-            <div class="label">Capability</div>
-            <div class="discipline-block">
-              <h4>Design. Engineering. Deployment.</h4>
-              <p>Strategic architecture, premium interfaces and scalable systems — delivered with production discipline.</p>
-            </div>
-
-            <div class="mini-stack">
-
-              <div class="label">Tech stack</div>
-              <div class="stack-groups">
-                <div class="stack-group">
-                  <small>Frontend</small>
-                  <div class="pill-row">
-                    <span class="pill">React</span>
-                    <span class="pill">TypeScript</span>
-                    <span class="pill">Next.js</span>
-                    <span class="pill">Tailwind</span>
-                  </div>
-                </div>
-
-                <div class="stack-group">
-                  <small>Backend</small>
-                  <div class="pill-row">
-                    <span class="pill">Node.js</span>
-                    <span class="pill">PHP 8.3</span>
-                    <span class="pill">Laravel</span>
-                  </div>
-                </div>
-
-                <div class="stack-group">
-                  <small>Data & Infra</small>
-                  <div class="pill-row">
-                    <span class="pill">PostgreSQL</span>
-                    <span class="pill">MySQL</span>
-                    <span class="pill">Redis</span>
-                    <span class="pill">Docker</span>
-                    <span class="pill">AWS</span>
-                    <span class="pill">CI/CD</span>
-                  </div>
-                </div>
-
-                <p class="stack-mobile">Mobile: Native iOS/Android · React Native</p>
-              </div>
-
-              <p class="stack-note">
-                We choose stacks based on product constraints — performance, maintainability and launch speed.
-              </p>
-
-              <div class="proof-metrics" aria-label="delivery proof">
-                <div class="pm">
-                  <small>Delivery</small>
-                  <strong>2–6 weeks</strong>
-                </div>
-
-                <div class="pm">
-                  <small>Quality</small>
-                  <strong>Performance-first build</strong>
-                  <span class="pm-sub">Web Vitals focus • Accessibility baseline</span>
-                </div>
-
-                <div class="pm">
-                  <small>Support</small>
-                  <strong>12 months</strong>
-                </div>
-              </div>
-            </div>
+          <div class="rule-card reactive">
+            <div class="label">Build rule</div>
+            <p class="rule-copy">Always custom. No pre-built themes. No off-the-shelf systems.</p>
           </div>
 
-          <div class="side-box reactive">
-            <div class="label">Studio signal</div>
-            <h3 class="studio-title">
-              Controlled. Precise. Distinct.
-            </h3>
-            <p class="studio-copy">
-              Motion is engineered, not decorative. Every detail supports clarity, perceived value and performance.
-            </p>
-
-            <div class="rule-card">
-              <div class="label">Build rule</div>
-              <p class="rule-copy">
-                Always custom. No pre-built themes. No off-the-shelf systems.
-              </p>
-
-              <div class="mini-stack mini-stack-tight">
-                <div class="label">Standards</div>
-                <p class="standards-line">
-                  Performance, accessibility, security, SEO, maintainability — non-negotiable.
-                </p>
-              </div>
-            </div>
+          <div class="rule-card reactive">
+            <div class="label">Standards</div>
+            <p class="rule-copy">Performance, accessibility, security, SEO, maintainability — non-negotiable.</p>
           </div>
-        </aside>
-      </div>
-    </section>
 
-    <section class="ticker-wrap" aria-hidden="true">
+          <div class="rule-card reactive">
+            <div class="label">System rule</div>
+            <p class="rule-copy">If it does not improve usability, performance, or clarity, it does not ship.</p>
+          </div>
+          <div class="rule-card reactive">
+  <div class="label">Decision rule</div>
+  <p class="rule-copy">
+    Every addition must justify itself in performance, clarity, or control.
+  </p>
+</div>
+        </div>
+      </aside>
+    </div>
+
+    <div class="ticker-wrap">
       <div class="ticker-track">
         <div class="ticker-group">
           <span>Brand Systems</span>
           <span>Web Platforms</span>
           <span>Mobile Engineering</span>
           <span>Immersive 360</span>
-          <span>E-commerce Architecture</span>
+          <span>E-commerce</span>
+          <span>Architecture</span>
           <span>Motion Systems</span>
         </div>
         <div class="ticker-group">
@@ -244,7 +297,8 @@
           <span>Web Platforms</span>
           <span>Mobile Engineering</span>
           <span>Immersive 360</span>
-          <span>E-commerce Architecture</span>
+          <span>E-commerce</span>
+          <span>Architecture</span>
           <span>Motion Systems</span>
         </div>
         <div class="ticker-group">
@@ -252,216 +306,223 @@
           <span>Web Platforms</span>
           <span>Mobile Engineering</span>
           <span>Immersive 360</span>
-          <span>E-commerce Architecture</span>
+          <span>E-commerce</span>
+          <span>Architecture</span>
           <span>Motion Systems</span>
         </div>
       </div>
-    </section>
-
-    <section class="section" id="services">
-      <div class="container">
-        <div class="head">
-          <h2>Core capabilities, built to scale.</h2>
-          <p>Balanced creative authority and engineering discipline — designed to feel premium and run fast.</p>
-        </div>
-
-        <div class="grid4">
-          <article class="panel reactive service">
-            <div>
-              <div class="icon">01</div>
-              <h3>Brand & Identity Systems</h3>
-              <p>Strategic positioning and visual systems engineered for clarity and impact.</p>
-            </div>
-          </article>
-          <article class="panel reactive service">
-            <div>
-              <div class="icon">02</div>
-              <h3>Advanced Web Platforms</h3>
-              <p>Custom-built web architecture focused on performance, structure and scalability.</p>
-            </div>
-          </article>
-          <article class="panel reactive service">
-            <div>
-              <div class="icon">03</div>
-              <h3>Mobile Engineering</h3>
-              <p>iOS and Android applications built with modern architecture and long-term maintainability.</p>
-            </div>
-          </article>
-          <article class="panel reactive service">
-            <div>
-              <div class="icon">04</div>
-              <h3>Immersive & 360 Experiences</h3>
-              <p>Interactive spatial environments and virtual tours built for engagement and precision.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="stack">
-      <div class="container">
-        <div class="head">
-          <h2>Cinematic sticky stack.</h2>
-          <p>A controlled sequence: each new card layers above the last — scroll-synced, smooth, and intentional.</p>
-        </div>
-      </div>
-
-      <div class="stack-scene" id="stackScene">
-        <div class="container">
-          <div class="stack-sticky">
-            <div class="stack-stage" id="stackStage">
-              <div class="stack-scene-spot"></div>
-
-              <article class="stack-card reactive" id="phase-1" data-base-rot="-2.6" data-base-x="-26">
-                <div class="stack-veil"></div>
-                <div class="stack-card-inner">
-                  <div class="stack-copy">
-                    <div class="label">Architecture</div>
-                    <h3>Strategic foundations.</h3>
-                    <p>Every project begins with structure. Positioning, logic and technical architecture aligned from day one.</p>
-                    <span class="tag">Positioning / Logic / Architecture</span>
-                  </div>
-                  <div class="visual">
-                    <div class="glow"></div>
-                    <div class="core"></div>
-                  </div>
-                </div>
-              </article>
-
-              <article class="stack-card reactive" id="phase-2" data-base-rot="2.4" data-base-x="22">
-                <div class="stack-veil"></div>
-                <div class="stack-card-inner">
-                  <div class="stack-copy">
-                    <div class="label">System Design</div>
-                    <h3>Designed to perform.</h3>
-                    <p>Visual systems and interface logic built as one cohesive environment — clear, premium, consistent.</p>
-                    <span class="tag">Design System / UI Logic / Cohesion</span>
-                  </div>
-                  <div class="visual">
-                    <div class="glow" style="top:18%;right:16%"></div>
-                    <div class="core" style="left:22%;bottom:20%"></div>
-                  </div>
-                </div>
-              </article>
-
-              <article class="stack-card reactive" id="phase-3" data-base-rot="-2.2" data-base-x="-18">
-                <div class="stack-veil"></div>
-                <div class="stack-card-inner">
-                  <div class="stack-copy">
-                    <div class="label">Interaction & Performance</div>
-                    <h3>Motion with purpose.</h3>
-                    <p>Controlled animation and feedback engineered for clarity and speed — never for decoration.</p>
-                    <span class="tag">Motion / Feedback / Performance</span>
-                  </div>
-                  <div class="visual">
-                    <div class="glow" style="top:24%;right:12%"></div>
-                    <div class="core" style="left:16%;bottom:14%"></div>
-                  </div>
-                </div>
-              </article>
-
-              <article class="stack-card reactive" id="phase-4" data-base-rot="2.0" data-base-x="16">
-                <div class="stack-veil"></div>
-                <div class="stack-card-inner">
-                  <div class="stack-copy">
-                    <div class="label">Deployment & Scale</div>
-                    <h3>Built for growth.</h3>
-                    <p>Clean code, scalable architecture and long-term maintainability — ready for what comes next.</p>
-                    <span class="tag">Scale / Maintainability / Delivery</span>
-                  </div>
-                  <div class="visual">
-                    <div class="glow" style="top:14%;right:8%"></div>
-                    <div class="core" style="left:20%;bottom:18%"></div>
-                  </div>
-                </div>
-              </article>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section chapter-dock" id="dock">
-      <div class="container">
-        <div class="panel reactive chapter-shell">
-          <div class="chapter-intro">
-            <div class="label" style="margin-bottom:8px;">Chapter Dock</div>
-            Click to return to a chapter.
-          </div>
-          <div class="chapter-row">
-            <button class="chapter-btn" data-target="phase-1">
-              <small>Architecture</small>
-              <strong>Return to strategic foundations</strong>
-            </button>
-            <button class="chapter-btn" data-target="phase-2">
-              <small>System Design</small>
-              <strong>Return to performance-first design</strong>
-            </button>
-            <button class="chapter-btn" data-target="phase-3">
-              <small>Interaction</small>
-              <strong>Return to motion with purpose</strong>
-            </button>
-            <button class="chapter-btn" data-target="phase-4">
-              <small>Deployment</small>
-              <strong>Return to growth-ready delivery</strong>
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="contact">
-      <div class="container">
-        <div class="head">
-          <h2>Inquiry zone.</h2>
-          <p>Tell us what you’re building — we’ll respond with scope, timeline and next steps.</p>
-        </div>
-
-        <div class="two">
-          <div class="panel reactive box">
-            <div class="label">Project range</div>
-            <h3 style="margin:12px 0 0;font-size:clamp(28px,3.2vw,44px);line-height:1;letter-spacing:-.03em;max-width:12ch;">
-              Choose the range that matches the scope.
-            </h3>
-            <div class="chips">
-              <span class="chip">€3k–5k</span>
-              <span class="chip active">€5k–10k</span>
-              <span class="chip">€10k–20k</span>
-              <span class="chip">€20k+</span>
-            </div>
-          </div>
-
-          <div class="panel reactive box">
-            <div class="label">Start your inquiry</div>
-            <form>
-              <div class="field-wrap reactive">
-                <input class="field" type="text" placeholder="Your name" />
-              </div>
-              <div class="field-wrap reactive">
-                <input class="field" type="email" placeholder="Email address" />
-              </div>
-              <div class="field-wrap reactive">
-                <input class="field" type="text" placeholder="Project type (Brand / Web / Mobile / 360)" />
-              </div>
-              <div class="field-wrap reactive">
-                <textarea class="field" placeholder="Tell us about your project"></textarea>
-              </div>
-              <button class="btn primary" type="button">Send Request</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer-line">
-      <span>CORE Creative — digital systems, engineered with intent</span>
-      <span>Custom platforms • Mobile • Immersive 360</span>
     </div>
-  </footer>
+  </section>
 
-  <script src="assets/js/app.js" defer></script>
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="head">
+        <h2>Core capabilities, built to scale.</h2>
+        <p>Balanced creative authority and engineering discipline — designed to feel premium and run fast.</p>
+      </div>
+
+      <div class="grid4">
+        <div class="panel reactive service">
+          <div class="icon">01</div>
+          <div>
+            <h3>Brand &amp; Identity Systems</h3>
+            <p>Strategic positioning and visual systems engineered for clarity and impact.</p>
+          </div>
+        </div>
+
+        <div class="panel reactive service">
+          <div class="icon">02</div>
+          <div>
+            <h3>Advanced Web Platforms</h3>
+            <p>Custom-built web architecture focused on performance, structure and scalability.</p>
+          </div>
+        </div>
+
+        <div class="panel reactive service">
+          <div class="icon">03</div>
+          <div>
+            <h3>Mobile Engineering</h3>
+            <p>iOS and Android applications built with modern architecture and long-term maintainability.</p>
+          </div>
+        </div>
+
+        <div class="panel reactive service">
+          <div class="icon">04</div>
+          <div>
+            <h3>Immersive &amp; 360 Experiences</h3>
+            <p>Interactive spatial environments and virtual tours built for engagement and precision.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLOW / STACK -->
+  <section class="section" id="stack">
+    <div class="container">
+      <div class="head">
+        <h2>Cinematic sticky stack.</h2>
+        <p>A controlled sequence: each new card layers above the last — scroll-synced, smooth, and intentional.</p>
+      </div>
+    </div>
+
+    <div class="stack-scene">
+      <div class="container">
+        <div class="stack-sticky">
+          <div class="stack-stage reactive">
+            <div class="stack-scene-spot"></div>
+
+            <div class="stack-card reactive" data-chapter="architecture">
+              <div class="stack-veil"></div>
+              <div class="stack-card-inner">
+                <div class="stack-copy">
+                  <div class="tag">Architecture</div>
+                  <h3>Strategic foundations.</h3>
+                  <p>Every project begins with structure. Positioning, logic and technical architecture aligned from day one.</p>
+                  <div class="tag">Positioning / Logic / Architecture</div>
+                </div>
+                <div class="visual">
+                  <div class="glow"></div>
+                  <div class="core"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="stack-card reactive" data-chapter="system">
+              <div class="stack-veil"></div>
+              <div class="stack-card-inner">
+                <div class="stack-copy">
+                  <div class="tag">System Design</div>
+                  <h3>Designed to perform.</h3>
+                  <p>Visual systems and interface logic built as one cohesive environment — clear, premium, consistent.</p>
+                  <div class="tag">Design System / UI Logic / Cohesion</div>
+                </div>
+                <div class="visual">
+                  <div class="glow"></div>
+                  <div class="core"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="stack-card reactive" data-chapter="interaction">
+              <div class="stack-veil"></div>
+              <div class="stack-card-inner">
+                <div class="stack-copy">
+                  <div class="tag">Interaction &amp; Performance</div>
+                  <h3>Motion with purpose.</h3>
+                  <p>Controlled animation and feedback engineered for clarity and speed — never for decoration.</p>
+                  <div class="tag">Motion / Feedback / Performance</div>
+                </div>
+                <div class="visual">
+                  <div class="glow"></div>
+                  <div class="core"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="stack-card reactive" data-chapter="deployment">
+              <div class="stack-veil"></div>
+              <div class="stack-card-inner">
+                <div class="stack-copy">
+                  <div class="tag">Deployment &amp; Scale</div>
+                  <h3>Built for growth.</h3>
+                  <p>Clean code, scalable architecture and long-term maintainability — ready for what comes next.</p>
+                  <div class="tag">Scale / Maintainability / Delivery</div>
+                </div>
+                <div class="visual">
+                  <div class="glow"></div>
+                  <div class="core"></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="chapter-dock">
+          <div class="panel reactive chapter-shell">
+            <div>
+              <div class="label">Chapter Dock</div>
+              <div class="chapter-intro">Click to return to a chapter.</div>
+            </div>
+
+            <div class="chapter-row">
+              <button class="chapter-btn" data-to="architecture">
+                <small>Architecture</small>
+                <strong>Return to strategic foundations</strong>
+              </button>
+              <button class="chapter-btn" data-to="system">
+                <small>System Design</small>
+                <strong>Return to performance-first design</strong>
+              </button>
+              <button class="chapter-btn" data-to="interaction">
+                <small>Interaction</small>
+                <strong>Return to motion with purpose</strong>
+              </button>
+              <button class="chapter-btn" data-to="deployment">
+                <small>Deployment</small>
+                <strong>Return to growth-ready delivery</strong>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="head">
+        <h2>Inquiry zone.</h2>
+        <p>Tell us what you’re building — we’ll respond with scope, timeline and next steps.</p>
+      </div>
+
+      <div class="two">
+        <div class="panel reactive box">
+          <div class="label">Project range</div>
+          <h3 style="margin: 14px 0 0; font-size: 22px; letter-spacing: -0.02em;">
+            Choose the range that matches the scope.
+          </h3>
+
+          <div class="chips">
+            <div class="chip active">€3k–5k</div>
+            <div class="chip">€5k–10k</div>
+            <div class="chip">€10k–20k</div>
+            <div class="chip">€20k+</div>
+          </div>
+        </div>
+
+        <div class="panel reactive box">
+          <div class="label">Start your inquiry</div>
+
+          <form>
+            <div class="field-wrap reactive">
+              <input class="field" type="text" placeholder="Name" />
+            </div>
+            <div class="field-wrap reactive">
+              <input class="field" type="email" placeholder="Email" />
+            </div>
+            <div class="field-wrap reactive">
+              <textarea class="field" placeholder="Message"></textarea>
+            </div>
+
+            <button class="btn primary" type="button">Send Request</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="footer-line">
+          <div>CORE Creative — digital systems, engineered with intent</div>
+          <div>Custom platforms • Mobile • Immersive 360</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="assets/js/app.js?v=dev7"></script>
 </body>
 </html>
