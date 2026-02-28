@@ -1,26 +1,23 @@
-﻿# CORE Creative — Website
+﻿# CORE Creative — Site
 
-Luxury, million-dollar presentation with engineering-first delivery.
+Local path: `C:\xampp\htdocs\cc`  
+Hosting target: shared hosting (no Node runtime).  
+Goal: luxury, million-dollar design. Engineering tone.
 
-## Baseline rules
-- Return only full files.
-- Do not touch sections outside current focus.
-- Stack section is off-limits.
-- 1 batch = 1 commit.
+## Workflow rules
+- Return only full files that changed
+- Do not touch sections outside focus
+- 1 batch = 1 commit
+- Stack section is locked until explicitly allowed
 
 ## Current focus
-Hero only:
-- Engineering profile as a list (not mini cards)
-- Delivery / Quality / Support as a premium block
+- HERO only (left + right)
+- No duplicate messaging
+- Engineering profile as list (not mini cards)
+- Delivery / Quality / Support as premium block
 - Must include: Performance budget / CWV / A11y / Security
 
-## Hosting target
-Loopia shared hosting (static build; no Node server).
-
-## Local dev (XAMPP)
-Open: http://localhost/cc/
-
 ## Structure
-- index.html
-- assets/css/styles.css
-- assets/js/app.js
+- `index.html`
+- `assets/css/styles.css`
+- `assets/js/app.js`
