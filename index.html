@@ -32,17 +32,22 @@
     content="Engineering-first delivery: defined budgets, measurable baselines, and release gates for CWV, accessibility, and security."
   />
 
-  <link rel="stylesheet" href="assets/css/styles.css?v=dev7" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=dev9" />
 </head>
 <body>
 
   <!-- NAV -->
   <div class="nav">
     <div class="container nav-inner">
-      <a class="brand" href="#top" aria-label="CORECREATIVE">
-        <span class="dot"></span>
-        <span>CORECREATIVE</span>
-      </a>
+<a class="brand brand-lockup" href="#top" aria-label="CORECREATIVE ART">
+  <span class="dot"></span>
+  <span class="brand-word">CORECREATIVE</span>
+  <span class="brand-script-wrap" aria-hidden="true">
+    <span class="brand-script-reveal">
+      <span class="brand-script">art</span>
+    </span>
+  </span>
+</a>
 
       <div class="links" aria-label="primary">
         <a href="#services">Services</a>
@@ -80,8 +85,7 @@
           </h1>
 
           <p class="hero-copy">
-            We engineer custom platforms against defined budgets — performance, Core Web Vitals,
-            accessibility, and security — measured, reviewed, and maintained post-launch.
+            We engineer custom platforms against defined performance, accessibility, and security baselines — measured before release and maintained after launch.
           </p>
 
           <div class="actions">
@@ -90,87 +94,65 @@
           </div>
         </div>
 
-        <div class="hero-lower">
-          <div class="hero-strip">
-            <!-- ENGINEERING PROFILE -->
-            <div class="card reactive profile-card">
-              <div>
-                <div class="label">Engineering profile</div>
+        <div class="hero-strip">
+          <!-- ENGINEERING PROFILE -->
+          <div class="card reactive profile-card">
+            <div>
+              <div class="label">Engineering profile</div>
 
-                <div class="profile-list" aria-label="engineering profile list">
-                  <div class="pl">
-                    <strong>Latency</strong>
-                    <span>Fast render &amp; interaction response</span>
-                  </div>
-                  <div class="pl">
-                    <strong>Bespoke</strong>
-                    <span>No templates, no themes, no shortcuts</span>
-                  </div>
-                  <div class="pl">
-                    <strong>Scale</strong>
-                    <span>Architecture designed to evolve</span>
-                  </div>
-                  <div class="pl">
-                    <strong>Control</strong>
-                    <span>Structured delivery, predictable outcomes</span>
-                  </div>
+              <div class="profile-list" aria-label="engineering profile list">
+                <div class="pl">
+                  <strong>Latency</strong>
+                  <span>Fast render &amp; interaction response</span>
+                </div>
+                <div class="pl">
+                  <strong>Bespoke</strong>
+                  <span>No templates, no themes, no shortcuts</span>
+                </div>
+                <div class="pl">
+                  <strong>Scale</strong>
+                  <span>Architecture designed to evolve</span>
+                </div>
+                <div class="pl">
+                  <strong>Control</strong>
+                  <span>Structured delivery, predictable outcomes</span>
                 </div>
               </div>
-
-              <p class="micro micro-tight">
-                Controlled delivery — motion, structure and interaction tuned as one system.
-              </p>
             </div>
 
-            <!-- ENGINEERING BASELINE -->
-            <div class="card reactive baseline-card">
-              <div>
-                <div class="label">Engineering baseline</div>
-
-                <div class="baseline-list" aria-label="engineering baseline list">
-                  <div class="bl">
-                    <strong>Performance budgeted</strong>
-                    <span>Targets defined before build, enforced during delivery</span>
-                  </div>
-                  <div class="bl">
-                    <strong>Core Web Vitals aligned</strong>
-                    <span>Measured, verified, regression-proof</span>
-                  </div>
-                  <div class="bl">
-                    <strong>Accessibility baseline</strong>
-                    <span>Keyboard, contrast, semantics — built-in, not bolted on</span>
-                  </div>
-                  <div class="bl">
-                    <strong>Security-first</strong>
-                    <span>Hardening, safe defaults, least-privilege mindset</span>
-                  </div>
-                </div>
-              </div>
-
-              <p class="micro micro-tight">
-                Baseline gates apply to every release — no exceptions.
-              </p>
-            </div>
+            <p class="micro micro-tight">
+              Controlled delivery — motion, structure and interaction tuned as one system.
+            </p>
           </div>
 
-          <!-- RELEASE PROFILE -->
-          <div class="proof-block reactive" aria-label="release profile">
-            <div class="label">Release profile</div>
+          <!-- ENGINEERING BASELINE -->
+          <div class="card reactive baseline-card">
+            <div>
+              <div class="label">Engineering baseline</div>
 
-            <div class="proof-lines">
-              <div class="proof-line">
-                <strong>Delivery</strong>
-                <span>2–6 weeks</span>
-              </div>
-              <div class="proof-line">
-                <strong>Quality</strong>
-                <span>Performance budget · CWV gates · A11y baseline · Security-first</span>
-              </div>
-              <div class="proof-line">
-                <strong>Support</strong>
-                <span>12 months</span>
+              <div class="baseline-list" aria-label="engineering baseline list">
+                <div class="bl">
+                  <strong>Performance budgeted</strong>
+                  <span>Targets defined before build, enforced during delivery</span>
+                </div>
+                <div class="bl">
+                  <strong>Core Web Vitals aligned</strong>
+                  <span>Measured, verified, regression-proof</span>
+                </div>
+                <div class="bl">
+                  <strong>Accessibility baseline</strong>
+                  <span>Keyboard, contrast, semantics — built-in, not bolted on</span>
+                </div>
+                <div class="bl">
+                  <strong>Security-first</strong>
+                  <span>Hardening, safe defaults, least-privilege mindset</span>
+                </div>
               </div>
             </div>
+
+            <p class="micro micro-tight">
+              Baseline gates apply to every release — no exceptions.
+            </p>
           </div>
         </div>
       </div>
@@ -220,32 +202,19 @@
             </div>
 
             <div class="stack-note-block">
-<div class="stack-note-rows">
-  <div class="stack-note-item">
-    <div class="stack-note-label">Mobile capability</div>
-    <div class="stack-note-copy">Native iOS/Android · React Native</div>
-  </div>
+              <div class="stack-note-rows">
+                <div class="stack-note-item">
+                  <div class="stack-note-label">Mobile capability</div>
+                  <div class="stack-note-copy">Native iOS/Android · React Native</div>
+                </div>
 
-  <div class="stack-note-item">
-    <div class="stack-note-label">Stack selection</div>
-    <div class="stack-note-copy">
-      Chosen against performance, maintainability and delivery constraints.
-    </div>
-  </div>
-
-  <div class="stack-note-item">
-    <div class="stack-note-label">Deployment fit</div>
-    <div class="stack-note-copy">
-      Built for shared hosting, controlled environments, and clean handoff.
-    </div>
-  </div>
-  <div class="stack-note-item">
-  <div class="stack-note-label">Maintenance logic</div>
-  <div class="stack-note-copy">
-    Designed for clean revisions, stable updates, and low-friction handoff.
-  </div>
-</div>
-</div>
+                <div class="stack-note-item">
+                  <div class="stack-note-label">Deployment fit</div>
+                  <div class="stack-note-copy">
+                    Built for shared hosting, controlled environments, and clean handoff.
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -271,12 +240,6 @@
             <div class="label">System rule</div>
             <p class="rule-copy">If it does not improve usability, performance, or clarity, it does not ship.</p>
           </div>
-          <div class="rule-card reactive">
-  <div class="label">Decision rule</div>
-  <p class="rule-copy">
-    Every addition must justify itself in performance, clarity, or control.
-  </p>
-</div>
         </div>
       </aside>
     </div>
@@ -523,6 +486,6 @@
     </div>
   </section>
 
-  <script src="assets/js/app.js?v=dev7"></script>
+  <script src="assets/js/app.js?v=dev9"></script>
 </body>
 </html>
