@@ -1,6 +1,8 @@
 (function(){
+  const root = document.documentElement;
   const reactive = document.querySelectorAll('.reactive');
   const hero = document.querySelector('.hero');
+  const nav = document.querySelector('.nav');
   const stackScene = document.getElementById('stackScene');
   const stackStage = document.getElementById('stackStage');
   const stackCards = Array.from(document.querySelectorAll('.stack-card'));
@@ -21,6 +23,24 @@
     el.style.setProperty('--mx', mx + '%');
     el.style.setProperty('--my', my + '%');
   }
+
+  function syncNavState(){
+    if(!nav) return;
+    nav.classList.toggle('is-scrolled', window.scrollY > 12);
+  }
+
+  function syncPageGlow(x, y){
+    const w = window.innerWidth || 1;
+    const h = window.innerHeight || 1;
+    const px = clamp((x / w) * 100, 0, 100);
+    const py = clamp((y / h) * 100, 0, 100);
+    root.style.setProperty('--page-x', px + '%');
+    root.style.setProperty('--page-y', py + '%');
+  }
+
+  document.addEventListener('mousemove', e=>{
+    syncPageGlow(e.clientX, e.clientY);
+  }, { passive:true });
 
   reactive.forEach(el=>{
     el.addEventListener('mouseenter', e=>{
@@ -56,7 +76,6 @@
     });
   }
 
-  // --- Fast, premium tilt (damped) ---
   const tilt = {
     targetX: 0, targetY: 0,
     curX: 0, curY: 0,
@@ -117,7 +136,6 @@
     }
   }
 
-  // compute target from last mousemove per frame
   let mouseQueued = false;
   let lastMouse = null;
 
@@ -153,7 +171,6 @@
     });
   });
 
-  // --- Stack motion: rAF throttled ---
   let needsUpdate = true;
   let ticking = false;
 
@@ -163,6 +180,7 @@
     ticking = true;
     requestAnimationFrame(()=>{
       ticking = false;
+      syncNavState();
       if(needsUpdate) updateStack();
       needsUpdate = false;
     });
@@ -289,8 +307,13 @@
     });
   });
 
+  syncPageGlow(window.innerWidth * 0.5, window.innerHeight * 0.38);
+  syncNavState();
   requestUpdate();
   window.addEventListener('scroll', requestUpdate, { passive:true });
-  window.addEventListener('resize', requestUpdate);
+  window.addEventListener('resize', ()=>{
+    syncPageGlow(window.innerWidth * 0.5, window.innerHeight * 0.38);
+    requestUpdate();
+  });
   window.addEventListener('load', requestUpdate);
 })();
